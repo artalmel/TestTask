@@ -71,7 +71,11 @@ function isEmpty(el){
        return true;
     }
 }
-
+/**
+ * Проверяет подлинность аддреса эл. почты
+ * @param el
+ * @returns {boolean}
+ */
 function isEmail(el){
     var pattern = /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;
     var result = pattern.test($(el).val());
@@ -79,7 +83,12 @@ function isEmail(el){
         return true;
     }
 }
-
+/**
+ * Проверяет длина пароля,
+ * пароль должен быть не короче 8 символов
+ * @param el
+ * @returns {boolean}
+ */
 function passLength(el) {
     if($(el).val().length < 8){
         return true;
@@ -96,7 +105,7 @@ function validateCurrent(e) {
     var types_pattern =/text|email|password/;
     var type = $(el).attr("type");
 
-    // Проверяет
+    // Поле не должен быть пустым
     if(types_pattern.test(type)){
         if(isEmpty(el) == true){
             er_array.push(error_text['empty']);
@@ -106,7 +115,7 @@ function validateCurrent(e) {
             removeError(el);
         }
     }
-    // Проверяет
+    // Проверяет подлинность аддреса эл. почты
     if(type == 'email'){
         if(isEmail(el) == true){
             er_array.push(error_text['email']);
