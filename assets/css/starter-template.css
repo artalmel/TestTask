@@ -1,0 +1,48 @@
+body {
+  padding-top: 50px;
+}
+
+.end-container{
+  height: 40px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.form-signin{
+  max-width: 500px;
+  margin:15% auto;
+}
+.error{
+  border: 1px solid darkred;
+}
+.error_label, .error_text{
+  color: darkred;
+}
+#media-avatar img{
+  max-width: 170px;
+  max-height: 170px;
+  margin-bottom: 10px;
+}
+#media-profile img{
+  max-width: 400px;
+  max-height: 400px;
+}
+.textContainer {
+  height: 100%;
+  line-height: 40px;
+}
+
+.textContainer p {
+  vertical-align: middle;
+  display: inline-block;
+  color: #9d9d9d
+}
+.page-info ol li{
+  color: darkred;
+  font-size: 11px;
+}
+.page-info p{
+  color: darkred;
+}
